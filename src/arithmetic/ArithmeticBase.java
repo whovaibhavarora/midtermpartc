@@ -15,9 +15,17 @@ import java.util.Scanner;
  */
 public class ArithmeticBase 
 {
+    
+    public enum operations{
+        PLUS,
+        MINUS,
+        TIMES,
+        DIVIDES
+    }
  public double x,y;
     double calculate(double x, double y) 
         {
+            
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
         String s= sc.next();
